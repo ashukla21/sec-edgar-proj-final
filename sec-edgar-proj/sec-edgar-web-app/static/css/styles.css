@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+}
+
+.container {
+    max-width: 800px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+}
+
+form {
+    margin-bottom: 20px; /* Add space below the form */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-top: 10px; /* Add space above each label */
+}
+
+input, button {
+    margin-top: 5px; /* Add space above inputs and buttons */
+}
+
+h1, h2, h3 {
+    color: #333; /* Set the text color for heading elements */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain the aspect ratio of images */
+    margin-top: 20px; /* Add space above images */
+}

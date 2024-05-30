@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Insights</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Main heading with the company ticker -->
+    <h1>Insights for {{ ticker }}</h1>
+
+    <!-- Subheading for the generated graphs -->
+    <h2>Generated Graphs</h2>
+    <!-- Image tags for the graphs -->
+    <img src="{{ url_for('static', filename='images/' + ticker + '_revenue_net_income_over_years.png') }}" alt="Revenue and Net Income">
+    <img src="{{ url_for('static', filename='images/' + ticker + '_effective_tax_rate_over_years.png') }}" alt="Effective Tax Rate">
+    <img src="{{ url_for('static', filename='images/' + ticker + '_foreign_income_percentage_over_years.png') }}" alt="Foreign Income Percentage">
+
+    <!-- Subheading for the verbal insights -->
+    <h2>Verbal Insights</h2>
+    <div>
+        <!-- Loop through each section in the insights and display it as a paragraph -->
+        {% for section in insights['Insights'].split('\n\n') %}
+            <!-- Replace newlines with HTML line breaks and mark the content as safe HTML -->
+            <p>{{ section | replace("\n", "<br>") | safe }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

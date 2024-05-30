@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Sets the viewport to make the website look good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>10-K Filings Analysis</title>
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Main container for the webpage content -->
+    <div class="container">
+        <!-- Placeholder for content that will be provided by different templates -->
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

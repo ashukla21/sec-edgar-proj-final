@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Main heading for the 10-K Filings Analysis page -->
+<h1>10-K Filings Analysis</h1>
+
+<!-- Form for submitting user details and the company ticker -->
+<form action="/" method="post">
+    <!-- Username input field -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    
+    <!-- Email input field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    
+    <!-- Company ticker input field -->
+    <label for="ticker">Company Ticker:</label>
+    <input type="text" id="ticker" name="ticker" required>
+    <br>
+    
+    <!-- Submit button -->
+    <button type="submit">Generate Insights</button>
+</form>
+{% endblock %}
