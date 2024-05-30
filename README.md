@@ -23,6 +23,10 @@ Programming First Task for Summer Research
 
 *Also included that the LLM API should choose two insights of its own which it deems as important/relevant*
 
+# Visualizations
+
+I also chose to specifically visualize the Revenue, Net Income, Effective Tax Rate and Foreign Income Percentage for each company, alongside the verbal insights that I gathered using the LLM listed above.
+
 # Tech Stack
 
 **sec-edgar-downloader:** Selected because it makes obtaining financial filings from the SEC's EDGAR database convenient and simple.
@@ -33,4 +37,4 @@ Programming First Task for Summer Research
 
 **Matplotlib:** Chosen due to its wide range of capabilities for producing different kinds of visualizations.
 
-**Flask and TailWind CSS** Used to create simple web application for user interaction and display
+**Flask and TailWind CSS:** Used to create simple web application for user interaction and display
